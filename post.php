@@ -1,6 +1,4 @@
-<?php
-include("./model/post1.model.php");
-?>
+        <?php include("./model/post1.model.php"); ?>
 
         <!-- Navigation-->
 

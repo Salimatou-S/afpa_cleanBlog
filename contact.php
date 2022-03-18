@@ -1,4 +1,6 @@
-
+<?php
+include("./model/contact.model.php");
+?>
         <!-- Navigation-->
 
         <?php include("nav.inc.php"); ?>
