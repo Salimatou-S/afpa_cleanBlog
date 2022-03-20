@@ -18,9 +18,10 @@ include("./model/home.model.php");
                             <h2 class="post-title"><?=$title_art_1 ?> </h2>
                             <h3 class="post-subtitle"><?=$subtitle_art_1 ?></h3>
                         </a>
-                        <p class="post-meta">
-                        <?=$auther_art_1 ?>
-                            <a href="#!"><?=$date_art_1 ?></a>
+                        <p class="post-meta"> 
+                            Rédigé par
+                            <a href="#!"> <?=$auther_art_1 ?></a>
+                            <?=$date_art_1 ?>
                         </p>
                     </div>
                     <!-- Divider-->

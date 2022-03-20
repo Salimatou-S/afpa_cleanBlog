@@ -1,22 +1,16 @@
 <?php
 $bg='assets/img/post-bg.jpg';
 $color='blue';
-$title='Pour toutes les occasions';
-$subtitle='Mariage';
-$content='A la recherche du modèle parfait de texte pour une <b> occasion particulière </b>?
-Vous ne savez pas quoi écrire sur un <a href="#">livre d\'or de mariage</a>?
-Vous ne savez pas quoi noter sur une carte d\'anniversaire ?
-Vous ne savez pas comment formuler un message de remerciements?
-Vous ne savez pas quel SMS envoyer pour être original à l\'occasion de la nouvelle année 2022 ?
-Vous cherchez une idée de texte pour une lettre ?
-
+$title='Mariage Malinké';
+$subtitle='Rites et coutumes';
+$content='
+Les rituels qui entourent le mariage en pays malinké, principal groupe ethnique du Nord de la Côte d’Ivoire, se distinguent par leur originalité.
+Le mariage reste un événement central dans la reproduction des structures familiales en pays malinké. Ayant pour rôle essentiel d\'assurer aux lignages une descendance légitime, et plus généralement de nouer ou reconduire les alliances inter-lignagères, le mariage est assorti d\'un cérémonial spectaculaire, surtout en sa phase de «<span class="test">l\'attachement de la cola </span>», qui doit réunir la majeure partie de famille étendue pour consacrer l\'union. 
+Les Dioula de la Côte d\'Ivoire organisent à l\'aide des noix de cola des rituels destinés à consolider les relations de couple. Le jour du mariage, on enroule dans un pagne blanc deux tranches de cola (une rouge et une blanche) représentant les deux fiancés. On pose les mains dessus et on fait des incantations ; le mariage est ainsi rendu indissoluble, il ne pourra être rompu qu\'avec l\'accord des deux parties en présence. Les préceptes de l\'Islam interdisent les excitants tels que l\'alcool et le tabac, mais ils ne censurent pas la noix de cola. La diffusion de cette noix était autrefois fondée sur l\'idée qu\'elle était la « noix du prophète Mahomet » et que sa consommation favorisait l\'entrée au paradis. La population islamisée est ainsi devenue très friande de cette noix qu\'on offre d\'ailleurs aux Imams pendant la cérémonie du mariage dans la mosquée. 
 <style>
     .test{
         color:'. $color .';
     }
 </style>
-
-Ce site est une mine d \'inspiration pour tous ceux qui doivent écrire un message ou un texte pour une <span class="test">occasion particulière</span>.
-Plusieurs catégories sont référencées sur le site : Noël, anniversaire, mariages, félicitations, condoléances, remerciements, etc. De plus, les sous-catégories vous permettront de peaufiner les styles d\'écriture : humour, original ou plus formel.
-Vous pourrez vous en servir aisément pour écrire vos cartes, vos textos ou encore vos mails !';
+Nul n’est besoin de rappeler que le mariage reste un contrat liant deux familles et non deux individus et est soumis à des interdictions entre certains clans et classes, et à des règles prescriptives. Car, rassembler la dot est une épreuve longue et difficile, tant pour le jeune qui dépend de sa famille que pour le budget de la famille. Le mariage se déroule de manière chronologique. D’abord le lundi ou le mercredi. Le « <b>Lassiguili</b> » (mise en chambre de la mariée) et le « Djabila » (pose du henné) consacre le premier jour du mariage où la future mariée doit rester dans sa chambre tout au long de la cérémonie sauf à des moments exceptionnelles très précises où sa présence est nécessaire. Puis vient le jeudi où l’on procède au « Fouroussiri » ou « Attachement de cola ». Il s\'agit du mariage religieux, il se déroule à la mosquée et fait intervenir les Imams en vue de l\'union des futurs mariés. Il se fait en général le matin. Puis s’ensuit le « Koun Koli » (lavage de la tête de la mariée) qui se fait généralement dans l\'après-midi. Après cette cérémonie, la mariée est conduite chez son mari. Et on en arrive enfin au dimanche, le jour où les Dioula font, au lever du jour, le « Koun Dan » (tresses que l\'on fait à la mariée) suivi de la sortie de la mariée en public, des remises des dons et cadeaux des marraines et des invités. Le « Deban Don » qui est la danse des marraines aux rythmes du Djembé, est l’étape qui met fin à la cérémonie.';
 //on ne met pas de balise de fin php car toutes les lignes vides en dessous sont du html si on ferme. Ceci permet de faire un fichier 100% php. On doit eviter de mettre des espaces'
