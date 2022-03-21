@@ -26,12 +26,12 @@
                     <!-- Post preview-->
                     <div class="post-preview">
                         <a href="post1.php">
-                            <h2 class="post-title"><?=$title_art_2 ?></h2>
-                            <h3 class="post-subtitle"><?=$subtitle_art_2 ?></h3>
+                            <h2 class="post-title">Mariage Akan</h2>
+                            <h3 class="post-subtitle">Rites et coutumes</h3>
                         </a>
                         <p class="post-meta">
                             Rédigé par
-                            <a href="#!"><?=$auther_art_2 ?></a>
+                            <a href="#!">Salimatou</a>
                             18 décembre 2021
                         </p>
                     </div>
