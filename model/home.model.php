@@ -1,6 +1,6 @@
 <?php
 $bg='assets/img/pageAccueil.jpg';
-$title="Mariages <br> & <br> Traditions Africaines";
+$title="Mariages & Traditions Africaines";
 $subtitle="Différences culturelles";
 
 $title_art_1='Mariage Malinké';
