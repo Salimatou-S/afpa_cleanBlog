@@ -1,5 +1,5 @@
 <?php
-$bg='assets/img/post-bg.jpg';
+$bg='assets/img/malien.jpg';
 $color='blue';
 $title='Mariage Malinké';
 $subtitle='Rites et coutumes';
