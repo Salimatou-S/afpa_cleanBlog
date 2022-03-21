@@ -1,4 +1,8 @@
 <?php
+
+include("config/config.inc.php");
+include ("model/pdo.inc.php");
+
 $bg='assets/img/pageAccueil.jpg';
 $title="Mariages & Traditions Africaines";
 $subtitle="Différences culturelles";
