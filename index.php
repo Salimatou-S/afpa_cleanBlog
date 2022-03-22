@@ -1,4 +1,6 @@
+
 <?php 
+//home controller
 include("./model/home.model.php");
 
 $layout_title= $title ;

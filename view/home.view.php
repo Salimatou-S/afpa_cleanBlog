@@ -4,67 +4,37 @@
         <!-- Page Header-->
 
         <?php include("view/layout/header.inc.php"); ?>
-
+        <?php //var_dump($data); 
+        //foreach($data as $onedata){
+            //echo "data: "; 
+         //   var_dump($onedata);
+       // }
+        ?>
         <!-- Main Content-->
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
+                <?php foreach($data as $onedata){ ?>
+  
+                <!-- Post preview-->
                     <div class="post-preview">
                         <a href="post.php">
-                            <h2 class="post-title"><?=$title_art_1 ?> </h2>
-                            <h3 class="post-subtitle"><?=$subtitle_art_1 ?></h3>
-                        </a>
+                            <h2 class="post-title"><?=$onedata['post_title']; ?> </h2>
+                            </a>
+                            <h3 class="post-subtitle"><?=$onedata["post_content"];/*substr($onedata["post_content"],0,200) ;*/ ?> [...] </h3>
+                       
                         <p class="post-meta"> 
                             Rédigé par
-                            <a href="#!"> <?=$auther_art_1 ?></a>
-                            <?=$date_art_2 ?>
+                            <a href="#!"><?=$onedata["display_name"] ?></a> le
+                            <?=$onedata["post_date"]?>
+                            <br>
+                            classé dans <?=$onedata["cat_descr"] ?>
                         </p>
                     </div>
                     <!-- Divider-->
                     <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post1.php">
-                            <h2 class="post-title">Mariage Akan</h2>
-                            <h3 class="post-subtitle">Rites et coutumes</h3>
-                        </a>
-                        <p class="post-meta">
-                            Rédigé par
-                            <a href="#!">Salimatou</a>
-                            18 décembre 2021
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.php">
-                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
-                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on August 24, 2021
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.php">
-                            <h2 class="post-title">Failure is not an option</h2>
-                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on July 8, 2021
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
+
+                    <?php } ?>
                     <!-- Pager-->
                     <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
                 </div>
@@ -73,3 +43,4 @@
          <!-- Footer-->
          
         <?php include("view/layout/footer.inc.php"); ?>
+        
