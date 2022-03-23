@@ -3,7 +3,12 @@
         exit;
         die($_GET['article']); 
         echo($_GET['article']); */
-        include("./model/post1.model.php");
+
+        //ce controller doit recevoir un parametre qui article
+        if (!isset($_GET["article"])){
+                die("Manque paramètre!");
+        }
+        include("./model/post.model.php");
 
         $layout_title= $title ; //il s'agit du titre dans l'url au niveau du navigateur
 

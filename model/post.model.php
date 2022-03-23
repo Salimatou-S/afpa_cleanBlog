@@ -1,5 +1,31 @@
 <?php
-if ((!isset($_GET['article'])) || ($_GET['article']=='1')){
+//post model
+include("config/config.inc.php");
+include ("model/pdo.inc.php");
+
+try{
+    $query="
+    SELECT post_date,post_content, post_title, display_name,cat_descr 
+    FROM blog_posts 
+
+    INNER JOIN blog_users
+    ON post_author = ID
+
+    INNER JOIN blog_categories
+    ON post_category = cat_id
+    
+    WHERE post_ID = " .$_GET['article'];
+
+    //die($query);
+    $req = $pdo->query($query);
+   
+    $data =$req->fetch();
+    //var_dump($data);
+} catch(Exception $e){
+    die("ereur Mysql: " .$e->getMessage());
+}
+
+/* if ((!isset($_GET['article'])) || ($_GET['article']=='1')){
 $bg='assets/img/malien.jpg';
 $color='blue';
 $title='Mariage Malinké';
@@ -128,4 +154,4 @@ $bg='https://www.codeur.com/blog/wp-content/uploads/2019/05/corriger-erreur-404-
 $title='Erreur 404';
 $subtitle='page inexistante!';
 $content='';
-}
+} */
