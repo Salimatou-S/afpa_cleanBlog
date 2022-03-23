@@ -5,7 +5,7 @@ include ("model/pdo.inc.php");
 
 try{
     $query="
-    SELECT post_ID, post_date,LEFT(post_content," . TRONCATURE .") AS post_content, post_title, display_name,cat_descr 
+    SELECT post_ID, post_date,LEFT(post_content," . TRONCATURE .") AS post_content, post_title, display_name,cat_descr,post_img_url 
     FROM blog_posts 
 
     INNER JOIN blog_users
@@ -28,9 +28,9 @@ try{
     die("ereur Mysql: " .$e->getMessage());
 }
 
-$bg='assets/img/accueil2.webp';
-$title="Mariages & Traditions Africaines";
-$subtitle="Différences culturelles";
+$bg='assets/img/home-bg.jpg';
+$header_title="Blog de surf";
+$header_subtitle="meilleur sport de glisse!";
 
 /* $title_art_1='Mariage Malinké';
 $subtitle_art_1='Rites et coutumes';

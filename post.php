@@ -9,8 +9,10 @@
                 die("Manque paramètre!");
         }
         include("./model/post.model.php");
-
-        $layout_title= $title ; //il s'agit du titre dans l'url au niveau du navigateur
+        $bg=$data['post_img_url'];
+        $layout_title= $data["post_title"]; //il s'agit du titre dans l'url au niveau du navigateur
+        $header_title= substr($data["post_title"],0,TRONCATURE_HEADER) . '...';
+        $header_subtitle= substr($data["post_title"],TRONCATURE_HEADER);
 
         include("./view/post.view.php");
      

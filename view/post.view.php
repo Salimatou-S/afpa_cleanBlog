@@ -11,9 +11,11 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
-                <p>
-                    <?=$data["post_content"]  ?>
+                <p><?=$data["post_content"]  ?> 
+                <br> Redigé par <a href=""> <?=$data["display_name"]  ?></a> 
+                 le  <?=$data["post_date"]  ?>
                 </p>
+                <p>Catégorie <?=$data["cat_descr"]  ?> </p>
             </div>
         </div>
     </div>
