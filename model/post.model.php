@@ -22,7 +22,7 @@ try{
     $data =$req->fetch();
     //var_dump($data);
 } catch(Exception $e){
-    die("ereur Mysql: " .$e->getMessage());
+    die("erreur Mysql: " .$e->getMessage());
 }
 
 /* if ((!isset($_GET['article'])) || ($_GET['article']=='1')){

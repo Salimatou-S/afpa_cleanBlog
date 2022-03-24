@@ -4,6 +4,21 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
+
+                    <?php if(isset($_GET['notif'])) {?>
+                    <div class="alert alert-success" role="alert">
+                    <?php if ($_GET["notif"] == 1) echo"Merci de m'avoir contacté!" ;?>
+                    <?php if ($_GET["notif"] == 2) echo"Merci de vous être inscrit" ;?>
+                    </div>
+                    <?php } ?>
+
+                    <?php if(isset($_GET['erreur'])) {?>
+                    <div class="alert alert-danger" role="alert">
+                    <?php if ($_GET["erreur"] == 1) echo"Désolé votre demande a échouée" ;?>
+                    </div>
+                    <?php } ?>
+
+
                             <h1><?=$header_title ?></h1>
                             <span class="subheading"><?=$header_subtitle ?></span>
                         </div>

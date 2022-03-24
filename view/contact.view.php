@@ -20,25 +20,25 @@
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form id="contactForm" action="contact.add.php" >
+                    <form id="contactForm" action="contact.add.php" method="post" >
                         <div class="form-floating">
-                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..." required  maxlength="25"/>
                             <label for="name">Nom</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">Le nom est obligatoire.</div>
                         </div>
                         <div class="form-floating">
-                            <input class="form-control" id="email" name="email" type="email" placeholder="Entrez votre Email..." data-sb-validations="required,email" />
+                            <input class="form-control" id="email" name="email" type="email" placeholder="Entrez votre Email..." required />
                             <label for="email">Email</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">Email obligatoire.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email invalide.</div>
                         </div>
                         <div class="form-floating">
-                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="Enter your phone number..." data-sb-validations="required" />
+                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="Enter your phone number..." required   pattern="0[6-7]{1} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}"/>
                             <label for="phone">Phone Number</label>
                             <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" name="message"id="message" placeholder="Enter your message here..." style="height: 12rem" data-sb-validations="required"></textarea>
+                            <textarea class="form-control" name="message" id="message" placeholder="Enter your message here..." style="height: 12rem" required></textarea>
                             <label for="message">Message</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
