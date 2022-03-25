@@ -27,30 +27,31 @@ include ("model/pdo.inc.php");
 
  try{
     $query="
-    SELECT post_date,post_content, post_title,post_img_url, display_name,cat_descr 
-    FROM blog_posts 
+        SELECT post_date,post_content, post_title,post_img_url, display_name,cat_descr 
+        FROM blog_posts 
 
-    INNER JOIN blog_users
-    ON post_author = ID
+        INNER JOIN blog_users
+        ON post_author = ID
 
-    INNER JOIN blog_categories
-    ON post_category = cat_id
+        INNER JOIN blog_categories
+        ON post_category = cat_id
     
-    WHERE post_ID = :article";
+        WHERE post_ID = :article";
 
-$curseur=$pdo->prepare($query);
-$curseur->bindValue(':article',$_GET["article"], PDO::PARAM_INT);
+    $curseur=$pdo->prepare($query);
 
-$curseur->execute();
-$curseur->setFetchMode(PDO::FETCH_ASSOC);
-$data =$curseur->fetch();
+    $curseur->bindValue(':article',$_GET["article"], PDO::PARAM_INT);
+    $curseur->execute();
+
+    $curseur->setFetchMode(PDO::FETCH_ASSOC);
+    $data =$curseur->fetch();
 
   /*   die($query); 
    /*  $req = $pdo->query($query); */
    
    /*  $data =$req->fetch(); */
-   var_dump($data); 
-    exit;
+   /* var_dump($data); 
+    exit; */
  } catch(Exception $e){
     die("erreur Mysql: " .$e->getMessage());
 }  
